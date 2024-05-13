@@ -1,8 +1,8 @@
 // assets
-import { IconHierarchy, IconBuildingStore, IconKey, IconTool } from '@tabler/icons'
+import { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock, IconRobot, IconVariable, IconFiles } from '@tabler/icons-react'
 
 // constant
-const icons = { IconHierarchy, IconBuildingStore, IconKey, IconTool }
+const icons = { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock, IconRobot, IconVariable, IconFiles }
 
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
@@ -36,11 +36,43 @@ const dashboard = {
             breadcrumbs: true
         },
         {
+            id: 'assistants',
+            title: 'Assistants',
+            type: 'item',
+            url: '/assistants',
+            icon: icons.IconRobot,
+            breadcrumbs: true
+        },
+        {
+            id: 'credentials',
+            title: 'Credentials',
+            type: 'item',
+            url: '/credentials',
+            icon: icons.IconLock,
+            breadcrumbs: true
+        },
+        {
+            id: 'variables',
+            title: 'Variables',
+            type: 'item',
+            url: '/variables',
+            icon: icons.IconVariable,
+            breadcrumbs: true
+        },
+        {
             id: 'apikey',
             title: 'API Keys',
             type: 'item',
             url: '/apikey',
             icon: icons.IconKey,
+            breadcrumbs: true
+        },
+        {
+            id: 'documents',
+            title: 'Document Stores',
+            type: 'item',
+            url: '/document-stores',
+            icon: icons.IconFiles,
             breadcrumbs: true
         }
     ]
